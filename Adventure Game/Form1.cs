@@ -15,6 +15,7 @@ namespace Adventure_Game
     public partial class Form1 : Form
     {
         int page = 1;
+        int test = 8;
         
         Random randGen = new Random();
         public Form1()
@@ -279,6 +280,11 @@ namespace Adventure_Game
             optionButton1.Show();
             optionButton2.Show();
             optionButton3.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Text = test + "";
         }
     }
 }

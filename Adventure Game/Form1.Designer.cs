@@ -36,6 +36,7 @@
             this.optionButton3 = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -122,12 +123,23 @@
             this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(587, 55);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 513);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.optionButton3);
@@ -153,6 +165,7 @@
         private System.Windows.Forms.Button optionButton3;
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Button button1;
     }
 }
 

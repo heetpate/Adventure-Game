@@ -17,11 +17,18 @@ namespace Adventure_Game
         int page = 1;
         
         Random randGen = new Random();
+
+
         public Form1()
         {
             InitializeComponent();
 
             optionButton3.Hide();
+
+            optionButton1.Click += optionButton1_Click;
+            optionButton2.Click += optionButton2_Click;
+
+
         }
 
         private void DisplayPage()

@@ -44,18 +44,20 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::Adventure_Game.Properties.Resources.Screenshot_2024_03_20_144811;
-            this.pictureBox2.Location = new System.Drawing.Point(23, 163);
+            this.pictureBox2.Location = new System.Drawing.Point(34, 251);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(290, 320);
+            this.pictureBox2.Size = new System.Drawing.Size(435, 492);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Adventure_Game.Properties.Resources.Front_Image_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(-147, -94);
+            this.pictureBox1.Location = new System.Drawing.Point(-220, -145);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(604, 271);
+            this.pictureBox1.Size = new System.Drawing.Size(906, 417);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -64,9 +66,10 @@
             this.optionButton1.BackColor = System.Drawing.Color.Black;
             this.optionButton1.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionButton1.ForeColor = System.Drawing.Color.Red;
-            this.optionButton1.Location = new System.Drawing.Point(387, 307);
+            this.optionButton1.Location = new System.Drawing.Point(580, 472);
+            this.optionButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.optionButton1.Name = "optionButton1";
-            this.optionButton1.Size = new System.Drawing.Size(401, 37);
+            this.optionButton1.Size = new System.Drawing.Size(602, 57);
             this.optionButton1.TabIndex = 2;
             this.optionButton1.Text = "...";
             this.optionButton1.UseVisualStyleBackColor = false;
@@ -77,9 +80,10 @@
             this.optionButton2.BackColor = System.Drawing.Color.Black;
             this.optionButton2.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionButton2.ForeColor = System.Drawing.Color.Red;
-            this.optionButton2.Location = new System.Drawing.Point(387, 375);
+            this.optionButton2.Location = new System.Drawing.Point(580, 577);
+            this.optionButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.optionButton2.Name = "optionButton2";
-            this.optionButton2.Size = new System.Drawing.Size(401, 36);
+            this.optionButton2.Size = new System.Drawing.Size(602, 55);
             this.optionButton2.TabIndex = 3;
             this.optionButton2.Text = "...";
             this.optionButton2.UseVisualStyleBackColor = false;
@@ -89,9 +93,10 @@
             this.optionButton3.BackColor = System.Drawing.Color.Black;
             this.optionButton3.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionButton3.ForeColor = System.Drawing.Color.Red;
-            this.optionButton3.Location = new System.Drawing.Point(387, 433);
+            this.optionButton3.Location = new System.Drawing.Point(580, 666);
+            this.optionButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.optionButton3.Name = "optionButton3";
-            this.optionButton3.Size = new System.Drawing.Size(401, 31);
+            this.optionButton3.Size = new System.Drawing.Size(602, 48);
             this.optionButton3.TabIndex = 4;
             this.optionButton3.Text = "...";
             this.optionButton3.UseVisualStyleBackColor = false;
@@ -100,11 +105,11 @@
             // 
             this.outputLabel.AutoSize = true;
             this.outputLabel.ForeColor = System.Drawing.Color.Red;
-            this.outputLabel.Location = new System.Drawing.Point(584, 81);
+            this.outputLabel.Location = new System.Drawing.Point(876, 125);
+            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(16, 13);
+            this.outputLabel.Size = new System.Drawing.Size(0, 20);
             this.outputLabel.TabIndex = 5;
-            this.outputLabel.Text = "...";
             // 
             // startButton
             // 
@@ -116,27 +121,29 @@
             this.startButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.startButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.startButton.Location = new System.Drawing.Point(504, 154);
+            this.startButton.Location = new System.Drawing.Point(756, 237);
+            this.startButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(228, 128);
+            this.startButton.Size = new System.Drawing.Size(342, 197);
             this.startButton.TabIndex = 6;
             this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(596, 135);
+            this.label1.Location = new System.Drawing.Point(894, 208);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(52, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 513);
+            this.ClientSize = new System.Drawing.Size(1200, 789);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.outputLabel);
@@ -145,6 +152,7 @@
             this.Controls.Add(this.optionButton1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "The Quarry";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

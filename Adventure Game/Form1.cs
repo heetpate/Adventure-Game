@@ -14,7 +14,7 @@ namespace Adventure_Game
 {
     public partial class Form1 : Form
     {
-        int page = 1;
+        int page;
         
         Random randGen = new Random();
 
@@ -53,8 +53,8 @@ namespace Adventure_Game
                     break;
                 case 3:
                     outputLabel.Text = "You stayed with your friend and suddenly you hear strange sounds from the basement and your teacher is out with the other friends, What would you do?";
-                    optionButton1.Text = "Explore";
-                    optionButton2.Text = "No";
+                    optionButton1.Text = "No";
+                    optionButton2.Text = "Explore";
                     break;
                 case 4:
                     outputLabel.Text = "You and your friend started a movie but the noise is to irritating so you decide to go, check anyways";
@@ -66,7 +66,7 @@ namespace Adventure_Game
                     break;
                 case 5:
                     outputLabel.Text = "You open the basement, it's pitch black and suddenly a strange looking creature jumped on you friend";
-                    optionButton1.Text = "Save ";
+                    optionButton1.Text = "Save";
                     optionButton2.Text = "Get out of there";
                     break;
                 case 6:
@@ -88,9 +88,8 @@ namespace Adventure_Game
                     outputLabel.Text = "The electricity ran out the last option is to run to them";
                     Refresh();
                     Thread.Sleep(2000);
-                    outputLabel.Text = "You guys ran to your friends and told them everything";
-                    optionButton1.Text = "Run right away";
-                    optionButton2.Text = "Find a safe place and make a plan";
+                    page = 10;
+
                     break;
                 case 10:
                     outputLabel.Text = "You guys ran to your friends and told them everything";
@@ -214,26 +213,13 @@ namespace Adventure_Game
             }
             else if (page == 2)
             {
-                page = 11;
+                page = 12;
             }
             else if (page == 3)
             {
-                page = 4;
+                page = 5;
             }
-            else if (page == 4)
-            {
-                int randValue = randGen.Next(1, 41);
-
-                if (randValue < 30)
-                {
-                    page = 6;
-                }
-                else
-                {
-                    page = 7;
-                }
-            }
-            else if (page == 5)
+            else if (page == 4 || page == 5)
             {
                 int randValue = randGen.Next(1, 41);
 
@@ -248,15 +234,111 @@ namespace Adventure_Game
             }
             else if (page == 6)
             {
+                page = 1;
+            }
+            else if (page == 7 && page == 8 && page == 9)
+            {
+                page = 10;
+            }
+            else if (page == 10)
+            {
+                page = 12;
+            }
+
+            else if (page == 11)
+            {
+                page = 1;
+            }
+
+            else if (page == 12)
+            {
+                page = 13;
+            }
+            else if (page == 13)
+            {
+                page = 16;
+            }
+            else if (page == 14)
+            {
+                page = 1;
+            }
+            else if (page == 15)
+            {
+                page = 1;
+            }
+            else if (page == 16)
+            {
+                page = 18;
+            }
+            else if (page == 17)
+            {
+                page = 1;
+            }
+            else if (page == 18)
+            {
+                page = 20;
+            }
+            else if (page == 19)
+            {
+                page = 1;
+            }
+            else if (page == 20)
+            {
+                page = 22;
+            }
+            else if (page == 21)
+            {
+                page = 1;
+            }
+            else if (page == 22)
+            {
+                page = 25;
+            }
+            else if (page == 23)
+            {
+                page = 1;
+            }
+            else if (page == 24)
+            {
+                page = 1;
+            }
+            else if (page == 25)
+            {
+                page = 1;
+            }
+
+            DisplayPage();
+        }
+
+        private void optionButton2_Click(object sender, EventArgs e)
+        {
+            if (page == 1)
+            {
+                page = 3;
+            }
+            else if (page == 2)
+            {
+                page = 11;
+            }
+            else if (page == 3)
+            {
+                page = 4;
+            }
+            else if (page == 4 || page == 5)
+            {
+                page = 8;
+            }
+            else if (page == 6)
+            {
                 page = 99;
             }
             else if (page == 7)
             {
-                page = 10;
+                page = 9;
             }
             else if (page == 8)
             {
-                page = 10;
+                page = 9;
             }
             else if (page == 9)
             {
@@ -274,17 +356,13 @@ namespace Adventure_Game
 
             else if (page == 12)
             {
-                page = 13;
+                page = 14;
             }
             else if (page == 13)
             {
                 page = 15;
             }
-            else if (page == 14)
-            {
-                page = 99;
-            }
-            else if (page == 15)
+            else if (page == 14 && page == 15)
             {
                 page = 99;
             }
@@ -332,114 +410,6 @@ namespace Adventure_Game
             DisplayPage();
         }
 
-        private void optionButton2_Click(object sender, EventArgs e)
-        {
-            if (page == 1)
-            {
-                page = 3;
-            }
-            else if (page == 2)
-            {
-                page = 12;
-            }
-            else if (page == 3)
-            {
-                page = 5;
-            }
-            else if (page == 4)
-            {
-                page = 8;
-            }
-            else if (page == 5)
-            {
-                page = 8;
-            }
-            else if (page == 6)
-            {
-                page = 1;
-            }
-            else if (page == 7)
-            {
-                page = 9;
-            }
-            else if (page == 8)
-            {
-                page = 9;
-            }
-            else if (page == 9)
-            {
-                page = 10;
-            }
-            else if (page == 10)
-            {
-                page = 12;
-            }
-
-            else if (page == 11)
-            {
-                page = 1;
-            }
-
-            else if (page == 12)
-            {
-                page = 14;
-            }
-            else if (page == 13)
-            {
-                page = 15;
-            }
-            else if (page == 14)
-            {
-                page = 1;
-            }
-            else if (page == 15)
-            {
-                page = 1;
-            }
-            else if (page == 16)
-            {
-                page = 18;
-            }
-            else if (page == 17)
-            {
-                page = 1;
-            }
-            else if (page == 18)
-            {
-                page = 20;
-            }
-            else if (page == 19)
-            {
-                page = 1;
-            }
-            else if (page == 20)
-            {
-                page = 22;
-            }
-            else if (page == 21)
-            {
-                page = 1;
-            }
-            else if (page == 22)
-            {
-                page = 24;
-            }
-            else if (page == 23)
-            {
-                page = 1;
-            }
-            else if (page == 24)
-            {
-                page = 1;
-            }
-            else if (page == 25)
-            {
-                page = 1;
-            }
-
-            DisplayPage();
-        }
-
         private void startButton_Click(object sender, EventArgs e)
         {
             optionButton1.Show();
@@ -447,6 +417,10 @@ namespace Adventure_Game
             optionButton3.Hide();
 
             startButton.Hide();
+
+            page = 1;
+
+            DisplayPage();
         }
 
         private void Form1_Load(object sender, EventArgs e)

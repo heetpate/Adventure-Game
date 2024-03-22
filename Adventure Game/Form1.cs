@@ -23,6 +23,8 @@ namespace Adventure_Game
         {
             InitializeComponent();
 
+            optionButton1.Hide();
+            optionButton2.Hide();
             optionButton3.Hide();
 
             optionButton1.Click += optionButton1_Click;
@@ -43,10 +45,11 @@ namespace Adventure_Game
                 case 2:
                     outputLabel.Text = "Telling them everything what happened";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "Your friend ran to you and tells you everything that happened";
                     optionButton1.Text = "Run right away ";
                     optionButton2.Text = "Find a safe place and make a plan";
+                    Refresh();
                     break;
                 case 3:
                     outputLabel.Text = "You stayed with your friend and suddenly you hear strange sounds from the basement and your teacher is out with the other friends, What would you do?";
@@ -56,7 +59,7 @@ namespace Adventure_Game
                 case 4:
                     outputLabel.Text = "You and your friend started a movie but the noise is to irritating so you decide to go, check anyways";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "You open the basement, it's pitch black and suddenly a strange looking creature jumped on your friend";
                     optionButton1.Text = "Save";
                     optionButton2.Text = "Get out of there";
@@ -84,7 +87,7 @@ namespace Adventure_Game
                 case 9:
                     outputLabel.Text = "The electricity ran out the last option is to run to them";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "You guys ran to your friends and told them everything";
                     optionButton1.Text = "Run right away";
                     optionButton2.Text = "Find a safe place and make a plan";
@@ -107,7 +110,7 @@ namespace Adventure_Game
                 case 13:
                     outputLabel.Text = "Your safe! \r\nYou also find a gun, some food and water for temporary, the map to escape.";
                     Refresh();
-                    Thread.Sleep(3000);
+                    Thread.Sleep(2000);
                     outputLabel.Text = "Your plan is to wait for the electricity to call or go outside and escape yourself";
                     optionButton1.Text = "Wait";
                     optionButton2.Text = "Try escaping";
@@ -125,7 +128,7 @@ namespace Adventure_Game
                 case 16:
                     outputLabel.Text = "According to the map you are on the way to escape. In the morning you realize there is no creature roaming around";
                     Refresh();
-                    Thread.Sleep(4000);
+                    Thread.Sleep(3000);
                     outputLabel.Text = "They are planning to reach a small hotel and according to the map it will take them 10 hours walk and 6 hours car";
                     optionButton1.Text = "Walk";
                     optionButton2.Text = "Find a Car nearby";
@@ -444,6 +447,11 @@ namespace Adventure_Game
             optionButton3.Hide();
 
             startButton.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

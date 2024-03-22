@@ -36,7 +36,7 @@
             this.optionButton3 = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +62,7 @@
             // optionButton1
             // 
             this.optionButton1.BackColor = System.Drawing.Color.Black;
-            this.optionButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionButton1.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionButton1.ForeColor = System.Drawing.Color.Red;
             this.optionButton1.Location = new System.Drawing.Point(387, 307);
             this.optionButton1.Name = "optionButton1";
@@ -75,7 +75,7 @@
             // optionButton2
             // 
             this.optionButton2.BackColor = System.Drawing.Color.Black;
-            this.optionButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.optionButton2.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionButton2.ForeColor = System.Drawing.Color.Red;
             this.optionButton2.Location = new System.Drawing.Point(387, 375);
             this.optionButton2.Name = "optionButton2";
@@ -87,7 +87,7 @@
             // optionButton3
             // 
             this.optionButton3.BackColor = System.Drawing.Color.Black;
-            this.optionButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.optionButton3.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionButton3.ForeColor = System.Drawing.Color.Red;
             this.optionButton3.Location = new System.Drawing.Point(387, 433);
             this.optionButton3.Name = "optionButton3";
@@ -123,15 +123,13 @@
             this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(587, 55);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.Location = new System.Drawing.Point(596, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
@@ -139,7 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 513);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.optionButton3);
@@ -165,7 +163,7 @@
         private System.Windows.Forms.Button optionButton3;
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.Button startButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
